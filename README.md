@@ -781,7 +781,9 @@ FROM tr;
 ### 17. Top 5 Customers by Orders in Each State
 #### Question: 
 #### Identify sales trends by comparing each month's total sales to the previous month.
-	
+#### Challenge: 
+#### Include the number of orders and total sales for each customer. 
+
 #### Solution:
 ```sql
 /* Calculate - total orders
