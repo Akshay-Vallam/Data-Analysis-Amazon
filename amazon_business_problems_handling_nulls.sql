@@ -1,4 +1,4 @@
--- Amazon Data Analysis Project - 21 Advaned Business Problems
+-- Amazon Data Analysis Project - 20 Advaned Business Problems
 
 	SELECT * FROM category;
 	SELECT * FROM customers;
