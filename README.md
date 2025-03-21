@@ -160,15 +160,15 @@ CONSTRAINT inventory_fk_products FOREIGN KEY (product_id) REFERENCES products(pr
 ## Data Import
 
 Import data into tables in the below order
-- 1. category
-- 2. customers
-- 3. sellers
-- 4. products
-- 5. orders
-- 6. order_items
-- 7. payments
-- 8. shipping
-- 9. inventory
+- category
+- customers
+- sellers
+- products
+- orders
+- order_items
+- payments
+- shipping
+- inventory
 
 ## Data Cleaning
 
