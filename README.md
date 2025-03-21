@@ -2,6 +2,7 @@
 # Amazon - A multinational technology company engaged in e-commerce, cloud computing, digital streaming etc.
 
 ![AMAZON](https://github.com/Akshay-Vallam/Data-Analysis_Amazon/blob/main/amazon_image.jpg)
+*Image Credit: hbr.org*
 
 ## Overview
 
