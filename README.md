@@ -1,7 +1,7 @@
 # Comprehensive Data Analysis using SQL
 # Amazon - A multinational technology company engaged in e-commerce, cloud computing, digital streaming etc.
 
-![AMAZON](https://github.com/Akshay-Vallam/Data-Analysis_Amazon/blob/main/amazon_image.jpg)
+![AMAZON](https://github.com/Akshay-Vallam/Data-Analysis-Amazon/blob/main/amazon_image.jpg)
 *Image Credit: hbr.org*
 
 ## Overview
@@ -29,6 +29,11 @@ This project has helped me develop the following skills:
  - Conduct in-depth business analysis using SQL.
  - Optimize query performance and handle large datasets efficiently.
 
+ ## Datasets
+
+- **Period Covered**: The data spans across multiple years, allowing for long-term trend analysis.
+- **Geographical Coverage**: Data across various states in USA.
+
 ## Project Structure
 
 - **Database Setup:** Creation of the `amazon_db` database and the required tables.
@@ -36,7 +41,7 @@ This project has helped me develop the following skills:
 - **Data Cleaning:** Handling null values and ensuring data integrity.
 - **Business Problems:** Solving 20 specific business problems using SQL queries.
 
-![ERD](https://github.com/Akshay-Vallam/Data-Analysis_Amazon/blob/main/amazon_schemas_erd.png)
+![ERD](https://github.com/Akshay-Vallam/Data-Analysis-Amazon/blob/main/amazon_schemas_erd.png)
 
 ## Database Setup
 ```sql
@@ -288,7 +293,7 @@ SELECT * FROM inventory;
 #### Question: 
 #### Query the top 10 products by total sales value.
 #### Challenge: 
-#### Include product name, total quantity sold, and total sales value..
+#### Include product name, total quantity sold, and total sales value.
 	
 #### Solution:
 ```sql
@@ -819,11 +824,14 @@ WHERE rank <= 5;
 
 #### Solution:
 ```sql
+/* Join - order_items, orders, shipping tables
+Calculate - Sum of total orders count, avg of return_date - sale_date
+Coalesce - to convert null values to 0 */	
 SELECT
-    s.shipping_providers,
-    COUNT(o.order_id) as order_handled,
-    ROUND(SUM(oi.total_sale)::numeric, 2) as total_sale,
-    ROUND(COALESCE(AVG(s.return_date - s.shipping_date), 0)::numeric, 2) as average_days
+s.shipping_providers,
+COUNT(o.order_id) as order_handled,
+ROUND(SUM(oi.total_sale)::numeric, 2) as total_sale,
+ROUND(COALESCE(AVG(s.return_date - s.shipping_date), 0)::numeric, 2) as average_days
 FROM orders as o
 JOIN
 order_items as oi
