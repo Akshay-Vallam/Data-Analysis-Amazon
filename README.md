@@ -32,7 +32,7 @@ This project has helped me develop the following skills:
  ## Datasets
 
 - **Period Covered**: The data spans across multiple years, allowing for long-term trend analysis.
-- **Geographical Coverage**: Data across various states in USA.
+- **Geographical Coverage**: Data from various states in USA.
 
 ## Project Structure
 
