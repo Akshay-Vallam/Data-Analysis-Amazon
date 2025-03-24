@@ -31,8 +31,9 @@ This project has helped me develop the following skills:
 
  ## Datasets
 
-- **Period Covered**: The data spans across multiple years, allowing for long-term trend analysis.
-- **Geographical Coverage**: Data from various states in USA.
+ - **Data Covered**: This project includes 9 dataset tables and more than 21,000 records.
+ - **Period Covered**: The data spans across multiple years, allowing for long-term trend analysis.
+ - **Geographical Coverage**: Data from various states in USA.
 
 ## Project Structure
 
